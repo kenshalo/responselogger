@@ -1,0 +1,9 @@
+Requires jdk and maven
+
+Run mvn package jetty:run
+
+1.  http://localhost:8080 
+2.  Select response code series
+3.  LocationResource will generate random response (not always valid according 
+	to HTTP spec; but seems sufficient for this exercise)
+4.  All request get proxied through filter which will log to System.out implemented by java Filter 
